@@ -11,8 +11,8 @@
     </header>
     <main>
         <h2>Información personal</h2>
-        <p>Todos los campos son <strong>obligatorios</strong> *</p>
-        <form action="">
+        <li>Todos los campos son <strong>obligatorios</strong> *</li>
+        <form action="/">
         <label for="name">
         Primer nombre: <input type="text" id="name" name="person_name" required>
         <abbr title="required" aria-label="required">*</abbr>   
@@ -22,46 +22,49 @@
         <abbr title="required" aria-label="required">*</abbr>   
         </label><br>
         <label for="email">
-        Email: <input type="email" id="email" name="emain_person">
+        Email: <input type="email" id="email" name="email_person">
         <abbr title="required" aria-label="required">*</abbr>   
         </label><br>
         <label for="datebirth">
         Fecha de nacimiento: <input type="date" id="datebirth" name="personbirth">
         <abbr title="required" aria-label="required">*</abbr>   
         </label><br>    
-        <legend>Seleccione su tipo de genero:
+        <label>Seleccione su tipo de genero:
         <select name="tp_gender">
-        <option value="op0">  </option>
         <option value="op1">Women</option>
         <option value="op2">Men</option>
         <option value="op3">Other</option>
         </select>
         <abbr title="required" aria-label="required">*</abbr>
-        </legend>
-        <legend>Estado socioeconomico:
+        </label><br>
+        <label>Estado socioeconomico:
         <abbr title="required" aria-label="required">*</abbr>   
         <label for="stratum"><br>
-        Bajo: <input type="radio" id="low" name="state_low"><br>   
-        Medio: <input type="radio" id="medium" name="state_medium"><br>
-        Alto: <input type="radio" id="high" name="state_high"><br>
+        Bajo: <input type="radio" id="low" name="stratum"><br>   
+        Medio: <input type="radio" id="medium" name="stratum"><br>
+        Alto: <input type="radio" id="high" name="stratum"><br>
         </label>
-        </legend>
-        <h3>HOBBIES</h3>
-        <legend>Seleccione sus gustos:
+        </label>
+        <h3>Hobbies</h3>
+        <label>Seleccione sus gustos:
         <abbr title="required" aria-label="required">*</abbr><br>  
         <label for="hobbies">
-        Futbol <input type="checkbox" id="soccer" name="soccer"><br>
+        Futbol <input type="checkbox" id="soccer" name="soccer" required><br>
         Ciclismo <input type="checkbox" id="cycling" name="cycling"><br>
         Musica <input type="checkbox" id="music" name="music"><br>
         Pintura <input type="checkbox" id="painting" name="painting"><br>
         Canto <input type="checkbox" id="singing" name="singing"><br>
         Lectura <input type="checkbox" id="reading" name="reading"><br>
         Escritura <input type="checkbox" id="write" name="write"><br>
-        </legend>
+        </label>
         </label><br>
-        <legend>Seleccione el archivo que desee adjuntar:</legend>
+        <label>Seleccione el archivo que desee adjuntar:</label>
         <label for="file">
             <input type="file" id="file" name="personal_file">
+        </label><br>
+        <label for="Button">
+            <label>Enviar formulario: </label>
+          <input type="submit" id="button" name="send">
         </label>
     </form>
     </main>
