@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Form AndresRivera</title>
+    </head>
+    <body>
+    <header>
+        <h1>! ENCUESTA !</h1>
+    </header>
+    <main>
+        <h2>Información personal</h2>
+        <li>Todos los campos son <strong>obligatorios</strong> *</li>
+        <form action="/">
+        <label for="name">
+        Primer nombre: <input type="text" id="name" name="person_name" required>
+        <abbr title="required" aria-label="required">*</abbr>   
+        </label><br>
+        <label for="last_name">
+        Primer apellido: <input type="text" id="last_name" name="person_lastname" required>
+        <abbr title="required" aria-label="required">*</abbr>   
+        </label><br>
+        <label for="email">
+        Email: <input type="email" id="email" name="email_person" required>
+        <abbr title="required" aria-label="required">*</abbr>   
+        </label><br>
+        <label for="datebirth">
+        Fecha de nacimiento: <input type="date" id="datebirth" name="personbirth" required>
+        <abbr title="required" aria-label="required">*</abbr>   
+        </label><br>    
+        <label>Seleccione su tipo de genero:
+        <select name="tp_gender">
+        <option value="op1">Women</option>
+        <option value="op2">Men</option>
+        <option value="op3">Other</option>
+        </select>
+        <abbr title="required" aria-label="required">*</abbr>
+        </label><br>
+        <label for="stratum">Estado socioeconomico:
+        <abbr title="required" aria-label="required">*</abbr>   
+       <br>
+        Bajo: <input type="radio" id="low" name="stratum"><br>   
+        Medio: <input type="radio" id="medium" name="stratum"><br>
+        Alto: <input type="radio" id="high" name="stratum"><br>
+        </label>
+        <h3>Hobbies</h3>
+        <label for="hobbies">Seleccione sus gustos:
+        <abbr title="required" aria-label="required">*</abbr><br>  
+        Futbol <input type="checkbox" id="soccer" name="soccer" required><br>
+        Ciclismo <input type="checkbox" id="cycling" name="cycling"><br>
+        Musica <input type="checkbox" id="music" name="music"><br>
+        Pintura <input type="checkbox" id="painting" name="painting"><br>
+        Canto <input type="checkbox" id="singing" name="singing"><br>
+        Lectura <input type="checkbox" id="reading" name="reading"><br>
+        Escritura <input type="checkbox" id="write" name="write"><br>
+        </label><br>
+        <label for="file">Seleccione el archivo que desee adjuntar:
+            <input type="file" id="file" name="personal_file">
+        </label><br>
+        <button" name="send">Enviar</button>
+    </form>
+    </main>
+    </body>
+    <footer>
+        <br><hr>
+        <p>Autor: Andres Felipe Rivera Puin</p>   
+    </footer>
+</html>
