@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Accessible</title>
+    </head>
+    <body>
+    <header>
+    <h1>ACCESSIBLE FORM</h1>
+    </header>
+    <main>
+    <h2>Personal Information</h2>
+    <form action="/">
+    <fieldset>
+    <legend>Please enter your contact details</legend>
+    <label for="Information">
+    Your name: <input type="text" id="name" name="person_name" required>
+    <abbr title="required" aria-label="required">*</abbr>
+    </label><br>
+    <label for="email">
+    E-Mail address: <input type="text" id="email" name="email_person" required>
+    <abbr title="required" aria-label="required">*</abbr>
+    </label><br>
+    <label for="phone">
+    Phone number (+57): (optional): <input type="text" id="phone" name="phone_person">
+    </label>
+    </fieldset>
+    <fieldset>
+    <legend>Please select the course that you are interested in:</legend>
+    <input type="checkbox" id="web" name="web">Web Developer <br>
+    <input type="checkbox" id="react" name="react">React Developer <br>
+    <input type="checkbox" id="fullstack" name="fullstack">Fullstack Developer <br>
+    <input type="checkbox" id="other" name="other">Other <br>
+    </fieldset>
+    <label for="/">Please enter a message (optional): </label><br>
+    <textarea id="message" name="message" maxlength="50" minlength="5"></textarea>
+    </form>
+    </main>
+    </body>
+    <footer>
+    <p>
+    <button type="button" id="btn_submit">Send message</button> 
+    <button type="button" id="btn_reset">Reset form</button>   
+    </p>  
+    </footer>
+</html>
