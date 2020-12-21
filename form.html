@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="2">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="og:title" property="og:title" content="Ferreteria Trinidad la 14">
+    <meta name="description" content="La ferretería Trinidad ofrece los servicios de cerrajero y plomero a domicilio en la ciudad de tunja, además encuentra en nuestras instalaciones todos los materiales para la construcción">
+    <title>Ferreteria Trinidad</title>
+    </head>
+    <body>
+    <header>
+     <h1>Ferreteria</h1>
+     <h2>Bienvenidos a la Ferreteria Trinidad la 14</h2>
+     <nav>
+      <ol>
+       <li>Inicio</li>
+       <li>Pituras</li>
+       <li>Herramientas</li>
+       <li>Tuberia</li>
+       <li>Accesorios</li>
+      </ol>
+     </nav>
+    </header>
+    <main>
+    <article>
+     <header>
+      <h2>Promociones:</h2>
+      <figure>
+      <img src="3-semantic-html/imagenes/productosFerreteria.jpg" width="250" height="250" alt="Productos de ferreteria"><br>
+      <figcaption>Productos de ferreteria</figcaption>
+      </figure>
+     </header>
+     <section>
+      <p>Esta ferreteria es un establecimiento comercial que se dedica  a la venta al por mayor y menor de materiales para construccion y necesidades del hogar</p>  
+      <img src="3-semantic-html/imagenes/ferreteria.jpg" width="500" height="250" alt="Fachada"><br>
+      <p>Realiza tus pedidos:</p>
+      <form action="/">
+        <fieldset>
+        <legend>Ingrese sus datos de contacto</legend>
+        <p><label for="name">
+        Nombre: <input type="text" id="name" name="person_name" required>
+        <abbr title="required" aria-label="required">*</abbr>
+        </label></p>
+        <p><label for="email">
+        E-Mail: <input type="text" id="email" name="email_person" required>
+        <abbr title="required" aria-label="required">*</abbr>
+        </label></p>
+        <p><label for="phone">
+        Numero telefonico(+57): (optional): <input type="tel" id="phone" name="phone_person">
+        </label></p>
+        </fieldset>
+        <fieldset>
+        <legend>Seleccione el producto que deseea pedir</legend>
+        <p><input type="checkbox" id="painting" name="painting"> <label for="painting">Pintura</label></p>
+        <p><input type="checkbox" id="screw" name="screw"><label for="screw">Tornillo</label></p>
+        <p><input type="checkbox" id="pipeline" name="pipeline"><label for="pipeline">Tuberia</label></p>
+        <p><input type="checkbox" id="tool" name="tool"><label for="tool">Herramienta</label></p>
+        <p><input type="checkbox" id="sand" name="sand"><label for="sand">Arena</label></p>
+        <p><input type="checkbox" id="iron" name="iron"><label for="iron">Hierro</label></p>
+        <p><input type="checkbox" id="accessories" name="accessories"><label for="accessories">Accesorios</label></p>
+        </fieldset>
+        <label for="message">Otro tipo de producto?(optional):</label><br>
+        <textarea id="message" name="message" maxlength="50" minlength="5" rows="5"></textarea>
+     <fieldset>
+      <label for="method"><strong>Medios de pago:</strong>
+      <abbr title="required" aria-label="required">*</abbr><br>   
+       Efectivo:<input type="radio" id="cash" name="method" required><br> 
+       Tarjeta:<input type="radio" id="card" name="method" required><br>
+       PSE:<input type="radio" id="pse" name="method" required><br>
+      </label>
+    </fieldset>
+    <p>
+    <button id="btn_submit">Enviar pedido</button> 
+    <button type="reset" id="btn_reset">Eliminar</button>   
+    </p> 
+    </form>
+    </section>
+    </article>
+    </main>
+    <footer>   
+    <hr> 
+    <label id="information">Mayor Informacion:</label>
+     <nav>
+      <ul>
+      <li>Telefono: 311 998 6580</li>
+      <li>Email: ferreteriatrinidad74@gmail.com</li>
+      <li>Cr 14 # 1 A sur Tunja(Boyaca)</li>
+      </ul>
+     </nav>
+    <p>Gracias por visitar nuestra pagina</p>
+    <p>Autor: Andres Felipe Rivera Puin</p>   
+    </footer>
+</body>
+</html>
