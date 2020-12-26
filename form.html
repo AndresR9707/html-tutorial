@@ -63,12 +63,11 @@
         <label for="message">Otro tipo de producto?(optional):</label><br>
         <textarea id="message" name="message" maxlength="50" minlength="5" rows="5"></textarea>
      <fieldset>
-      <label for="method"><strong>Medios de pago:</strong>
+ <strong>Medios de pago:</strong>
       <abbr title="required" aria-label="required">*</abbr><br>   
-       Efectivo:<input type="radio" id="cash" name="method" required><br> 
-       Tarjeta:<input type="radio" id="card" name="method" required><br>
-       PSE:<input type="radio" id="pse" name="method" required><br>
-      </label>
+        <label for="cash">Efectivo:<input type="radio" id="cash" name="method" required></label><br> 
+       <label for="card">Tarjeta:<input type="radio" id="card" name="method" required></label><br>
+       <label for="pse">PSE:<input type="radio" id="pse" name="method" required></label><br>
     </fieldset>
     <p>
     <button id="btn_submit">Enviar pedido</button> 
