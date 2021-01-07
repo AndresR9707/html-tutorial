@@ -3,16 +3,17 @@
     <head>
     <meta charset="utf-8">
     <meta name="og:title" property="og:title" content="Ferreteria Trinidad la 14">
+    <meta name="description" content="La ferretería Trinidad ofrece los servicios de cerrajero y plomero a domicilio en la ciudad de tunja, además encuentra en nuestras instalaciones todos los materiales para la construcción">
     <meta name="robots" content="2">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="La ferretería Trinidad ofrece los servicios de cerrajero y plomero a domicilio en la ciudad de tunja, además encuentra en nuestras instalaciones todos los materiales para la construcción">
+    <link rel="stylesheet" href="styles.css">
     <title>Ferreteria Trinidad</title>
     </head>
     <body>
     <header>
-     <h1>Ferreteria</h1>
+     <h1>Ferreteria Trinidad</h1>
      <h2>Bienvenidos a la Ferreteria Trinidad la 14</h2>
-     <nav>
+     <nav >
       <ol>
        <li>Inicio</li>
        <li>Pituras</li>
@@ -34,7 +35,7 @@
      <section>
       <p>Esta ferreteria es un establecimiento comercial que se dedica  a la venta al por mayor y menor de materiales para construccion y necesidades del hogar</p>  
       <img src="3-semantic-html/imagenes/F2.jpeg" width="400" height="200" alt="Fachada"><br>
-      <p>Realiza tus pedidos:</p>
+      <h3>Realiza tus pedidos:</h3>
       <form action="/">
         <fieldset>
         <legend>Ingrese sus datos de contacto</legend>
@@ -62,14 +63,14 @@
         </fieldset>
         <label for="message">Otro tipo de producto?(optional):</label><br>
         <textarea id="message" name="message" maxlength="50" minlength="5" rows="5"></textarea>
-     <fieldset>
+     <fieldset id="mediosdepago">
  <strong>Medios de pago:</strong>
       <abbr title="required" aria-label="required">*</abbr><br>   
         <label for="cash">Efectivo:<input type="radio" id="cash" name="method" required></label><br> 
        <label for="card">Tarjeta:<input type="radio" id="card" name="method" required></label><br>
        <label for="pse">PSE:<input type="radio" id="pse" name="method" required></label><br>
     </fieldset>
-    <p>
+    <p id="button">
     <button id="btn_submit">Enviar pedido</button> 
     <button type="reset" id="btn_reset">Cancelar</button>   
     </p> 
@@ -87,8 +88,11 @@
       <li><address>Cr 14 # 1 A sur Tunja(Boyaca)</address></li>
       </ul>
      </nav>
+     <div id="informacion">
     <p>Gracias por visitar nuestra pagina</p>
-    <p>Autor: Andres Felipe Rivera Puin</p>   
-    </footer>
+    <p>Autor: Andres Felipe Rivera Puin</p>  
+    <p>Facebook: <a href="https://www.facebook.com/andresfelipe.rivera.73">link</a></p> 
+   </div>  
+  </footer>
 </body>
 </html>
